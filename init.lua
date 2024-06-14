@@ -92,6 +92,13 @@ vim.g.maplocalleader = ' '
 --go back to folder
 vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
 
+-- greatest remap ever
+vim.keymap.set('x', '<leader>p', [["_dP]])
+
+-- next greatest remap ever : asbjornHaland
+vim.keymap.set({ 'n', 'v' }, '<leader>y', [["+y]])
+vim.keymap.set('n', '<leader>Y', [["+Y]])
+
 --change backgroung to transparent
 function ColorMyPencils(color)
   color = color or 'rose-pine'
